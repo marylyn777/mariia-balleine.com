@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #B4D1ED;
+
+}
+
+header {
+  background-color: #B4D1ED;
+  color: white;
+  text-align: center;
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center; */
+}
+
+#firstPage {
+  background-color: #B4D1ED;
+  /* height: 100vh;
+  width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#headerR {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* Добавьте это */
+}
+
+#logoHeader {
+  height: 100%;
+  width: 100%;
+}
+
+#logoInTheHeader {
+  height: 70%;
+  max-height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#sections {
+  background-color: #6680ED;
+  width: calc(100% - 40px);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  width: 100%;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Signika', sans-serif;
+  font-size: 30px;
+}
+
+/* about-me */
+.about-me {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+}
+
+#mainInfo {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+
+}
+
+.text {
+  margin-block-end: 0 !important;
+  display: block;
+  font-family: 'Signika';
+  font-weight: 600;
+  font-size: 85px;
+  min-width: 250px;
+
+}
+
+.info-description {
+  margin-top: 20px;
+  text-align: left;
+  font-family: 'Signika';
+  font-weight: 300;
+  font-size: 25px;
+  min-width: 50px;
+}
+
+.gapper {
+  margin-top: 40px;
+}
+#paragraph1 {
+  font-family: 'Signika';
+  font-size: 90px;
+
+}
+
+.info-photo {
+  width: 25%;
+}
+
+.info-logo {
+  display: flex;
+  margin: 10px 0;
+  width: 100%;
+}
+
+
+
+/* skill */
+.skill-g {
+  width: calc(100% - 40px);
+  padding: 15px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-title {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.skill-title h1 {
+  font-size: 85px;
+  font-family: 'Signika';
+  color: white;
+  font-weight: 600;
+}
+
+.skill-elems {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 15px 0;
+  gap: 20px;
+}
+
+.skill-elem {
+  text-align: center;
+  
+}
+
+.skill-elem h3 {
+  font-size: 25px;
+  font-family: 'Signika';
+  color: white;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.skill-elem img {
+  width: 300px;
+}
+.skill-line{
+  margin: 20px 0 10px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.skil-line-desk {
+  height: 150px;
+}
+.skil-line-mob {
+  /* height: 150px; */
+  width: 70%;
+  display: none;
+} 
+
+/* contact */
+
+.contact-g {
+  width: calc(100% - 40px);
+  padding: 15px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-title {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.contact-title h1 {
+  font-size: 85px;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Signika';
+  font-weight: 600;
+}
+.contact-logos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 70px 0 90px 0;
+  /* flex-wrap: wrap; */
+}
+.contact-logo-text {
+  font-family: 'Signika';
+  font-weight: 400;
+  min-width: 140px;
+  font-size: 30px;
+  color: white;
+}
+.contact-images {
+}
+.contact-image {
+  height: 80px;
+}
+
+.contact-logo-text-c {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+
+}
+
+.final-image {
+  width: 100%;
+  height: 150px;
+}
+
+@media  screen and (max-width : 392px) {
+  #mainInfo {
+    margin-top: 10px;
+  }
+  .projectsImage {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+}
+
+@media screen and (max-width : 570px) {
+  nav a {
+    font-size: 20px;
+  }
+  .text {
+    min-width: 50px !important;
+  }
+  #paragraph1 {
+    font-size: 60px;
+  }
+  .info-photo {
+    min-width: 200px !important;
+  }
+  .info-description {
+    margin-top: 30px;
+    font-size: 20px;
+    min-width: 50px;
+  }
+  
+  .gapper {
+    margin-top: 50px;
+  }
+
+  .skill-title h1 {
+    font-size: 60px;
+  }
+
+  .skill-elem h3 {
+    font-size: 20px;
+  }
+
+  .skill-elem {
+    min-width: 200px;
+  }
+  .projectsImage {
+    width: 180px !important;
+    height: 180px;
+  }
+
+  .contact-title h1 {
+    font-size: 60px;
+  }
+  .contact-logo-text {
+    font-size: 20px;
+  }
+
+  
+}
+@media screen and (max-width : 1070px) {
+  #mainInfo {
+    flex-wrap: wrap;
+  }
+
+  .info-description {
+    order: 3;
+  }
+
+  .info-photo {
+    min-width: 280px;
+  }
+
+  .info-logo {
+    justify-content: flex-end;
+  }
+  /* skill */
+  .skil-line-desk {
+    display: none;
+  }
+  .skil-line-mob {
+    display: block;
+  } 
+
+  /* contact */
+
+  .contact-logos {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .contact-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+  }
+
+}
+/* ! LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOK */
+test-row {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start; /* w */
+  align-items: flex-start; /* h */
+}
+test-column {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; /* h */
+  align-items: flex-start; /* w */
+}
